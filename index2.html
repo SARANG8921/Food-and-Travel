@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foods and Travel</title>
+    <style>
+        body{
+            background-image: url(./images/hero.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+
+        }
+        .navbar{
+            width: 100%;
+            height: 110px;
+            justify-content: center;
+            display: flex;
+        }
+        #Nav #box1{
+            width: 30%;
+            height: 100%;
+            background-color: transparent;
+            display:flex;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-transform: capitalize;
+        }
+        #box1 img{
+            width: 100px;
+            padding: 10px 20px 10px 30px;
+            height: 60px;
+
+        }
+         #Box2{
+            width: 100%;
+            /* height: 100%; */
+            background-color: transparent;
+            display:flex;
+            align-items: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: black;
+        }
+        #Nav{
+            
+            color: azure;
+            width: 100%;
+            height: 80px;
+            display:flex;
+            background-color: rgba(186,181,181,0.655);
+            border-radius: 10px;
+        }
+        .navbar #Box2 h3{
+            padding: 20px;
+        }
+        #Box2 h3{
+            text-shadow: 0px 0px 5px rgb(0,0,0);
+        }
+        .article #div1{
+            background-color: rgba(158,158,158,0.712);
+            width: 70%;
+            height: 270px;
+            margin: 50px 200px 50px 200px;
+            text-align: center;
+            font-family: Josefin Sans;
+            font-size: larger;
+            color: azure;
+            border-radius: 20px;
+            border: 1px solid;
+            display: flex;
+            flex-flow: column;
+            margin: auto;
+        }
+        #div1{
+            padding-top: 50px;
+        }
+
+        #div1 #h1{
+            text-shadow: 0px 0px 5px rgb(0, 0, 0);
+            color: black;
+        }
+
+        #div1 p{
+            text-shadow: 0px 0px 5px rgb(0, 0, 0);
+            font-family: Josefin Sans;;
+        }
+        .article #div2{
+            
+            width: 80%;    
+            height:400px; 
+            margin: 10px 200px 10px 200px;
+            
+            border-radius: 20px;
+            text-align: center;
+            align-items: start;
+            background-image: url('./assets/10002.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-flow: column;
+            
+        }
+        #Home{
+            border: 2px solid gray;
+            color: azure;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgba(144, 143, 141, 0.612);
+            width: 70%;
+            height: 250px;
+            padding-top: 20px; 
+            margin-left: 200px;
+            margin-top:50px;
+            border-radius: 20px;
+            text-align: center;
+            justify-content:space-around ;
+            transition: background-color 1s ease, transform 1s ease ; box-shadow:0.3s ease;
+        
+        }
+        .article #Box2{
+            background-image: url(./images/destination-1.jpg);
+            width: 70%;    
+            height:400px; 
+            margin: 10px 200px 10px 200px;
+            border-radius: 20px;
+            text-align: center;
+            background-size: cover;
+            display: flex;
+        }
+        #aboutus{
+            border: 2px solid gray;
+            color: azure;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgba(144, 143, 141, 0.612);
+            width: 70%;
+            height: 250px;
+            padding-top: 20px; 
+            margin-left: 400px;
+            margin-top:50px;
+            border-radius: 20px;
+            text-align: center;
+            justify-content:space-around ;
+            transition: background-color 1s ease, transform 1s ease ; box-shadow:0.3s ease;
+
+        }
+        #aboutus {
+            border: 2px solid rgba(31, 28, 28, 0);
+            color: azure;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 60%;
+            height: 250px;
+            /* margin-left: 50px;
+             */
+             margin: auto;
+            transition: background-color 1s ease, transform 1s ease ; box-shadow:0.3s ease;
+        }
+        #box3{
+            background-image: url(./images/foods\ and\ travel.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            backdrop-filter: blur(50px);
+            background-color: bisque; 
+            width: 70%; 
+            border-radius: 20px;   
+            height:auto; 
+            margin: 10px 200px 10px 200px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin-top: 70px;
+            justify-content: center;
+            
+            
+
+        }
+        .dbox3{
+            width: 40%;
+            height: 250px;
+            margin: 10px 30px 20px 30px;
+            border-radius: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: azure;
+            background-color: rgba(99, 98, 96, 0.568);
+            
+            justify-content: space-around;
+            transition: background-color 1.2s ease, transform 1.2s ease ; box-shadow:0.4s ease;
+            
+        }
+        #box3:hover{
+            .dbox3{
+                background-color: rgba(78, 78, 78, 0.604);
+                transform:scale(1.1);
+            }
+
+        }  
+        #box3 h1{
+            
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: azure;
+            width: 100%;
+            display: block;
+            
+            transition: color 0.5s ease,transform 1s,text-shadow 0.5s ease;
+            
+            
+        }
+
+       
+
+    </style>
+    
+</head>
+<body>
+   <main>
+     <section>
+        <div class="navbar">
+            <div id="Nav">
+                <div id="box1">
+                    <img src="./images/logo.jpg" alt="">
+                    <h1>Food and Travel</h1>
+                </div>
+                <div id="Box2">
+                    <h3>Home</h3>
+                    <h3>About Us</h3>
+                    <h3>Services</h3>
+                    <h3>Contact us</h3>
+                    <h3>Terms And Conditions</h3>
+                    <h3>Privacy  Policy</h3>
+                    <h3>Disclaimer</h3>
+                </div>
+            </div>
+        </div>
+     </section>
+     <div class="article">
+        <div id="div1">
+            <h1 id="h1">GET EXClUSIVE PACkAGE WITH OFFER</h1>
+            <p>BOOKING WITH US AND PAY YOUR WAY TO A WORLD TOUR</p>
+        </div>
+        <br>
+        <div id="Box2">
+            <div id="Home">
+                <h1>Home</h1>
+                <p>"Welcome to Foods And Travel, your ultimate guide to the world's most delicious foods and breathtaking travel destinations. From the spicy streets of Asia to the charming cafes of Europe, we'll take you on a culinary journey that will leave you craving for more. Whether you're a foodie, a travel enthusiast, or just someone who loves exploring new cultures, we've got you covered."
+                </p>
+            </div>
+        </div>
+     </div>
+     <br>
+    <!--box 2-->
+    <div id="Box2">
+        <div id="aboutus">
+            <h1>About Us</h1>
+            <p>
+                "Welcome to Foods and Travel, a culinary travel companion founded by [Your Name], a passionate foodie and travel enthusiast. With a background in [Your Background], I created this website to share my love for exploring new flavors and destinations with fellow adventurers. On this site, you'll find carefully curated recipes, restaurant reviews, travel guides, and stories from my own journeys, all designed to inspire your next culinary escapade."
+
+            </p>
+        </div>
+    </div>
+     <br>
+     <div id="box3">
+        <h1 id="our services">Our Services</h1>
+        <div class="dbox3">
+            <h3 class="headingb3">Visit Top  Places In Europe</h3>
+            <p class="para">
+                Paris, France: Indulge in the city's iconic cuisine, from croissants and pains au chocolat to authentic Parisian fast food like Jambon-Beurre sandwiches ¹. With the highest number of Michelin-starred restaurants, Paris is a foodie's paradise 
+                Seville, Spain: Explore the birthplace of tapas and discover traditional Sevillian dishes, local wines, and sherry bars ³. Don't miss the famous Bodeguita Romero for authentic tapas.
+                 Rome, Italy: Savor the world's best pasta and pizza in the Eternal City. Visit Trastevere for a culinary journey, and enjoy the city's vibrant food scene ¹.
+             </p>
+        </div>
+        <div class="dbox3">
+            <h3 class="headingb3">Enjoy  The Delicious Foods</h3>
+            <p class="para">
+                Savor the Flavors
+              Indulge in the rich flavors of international cuisine, from spicy Asian street food to rich Italian pasta dishes.
+            Explore Local Specialties
+             Discover the unique flavors and ingredients of each destination, from fresh seafood in Greece to authentic tacos in Mexico.
+            </p>
+        </div>
+     </div>
+
+   </main>
+
+
+</body>
+</html>
